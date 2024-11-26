@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding:20px;
+    height: 79px;
+    border-bottom: 1px solid #ddd;
+    
+}
+
+.navbar .logo {
+    width: 70px;
+    height: 79px;
+    background-image: url(/WhatsApp\ Image\ 2024-11-26\ at\ 8.38.56\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.navbar .logo .img{
+    width: 24px;
+    height: 30px;
+    
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    /* color: #333; */
+}
+.navbar ul li .dropdown-nav{
+   border: 0;
+   width: 55px;
+     
+}
+.navbar ul li .dropdown-nav1{
+   border: rgb(206, 196, 196) 1px solid;
+   border-radius: 6px;
+   /* width: 60px; */
+   padding: 6px;
+     
+}
+
+.list-property {
+    background-color: black;
+    color:white;
+    padding: 10px 10px;
+    border-radius: 3px;
+}
+
+.hero {
+    text-align: center;
+    background: url('https://cdn.excelproperties.ae/media/property/residential-commercial/thumbnail/palm_jebel_ali_villas_frond_c_.webp?width=1024&height=423&format=webp&quality=90') no-repeat center center / cover;
+    color: white;
+    padding: 50px 20px;
+    
+}
+
+.search-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 1350px;
+    margin: 50px auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Tabs Styling */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.tab-btn {
+    background-color: transparent;
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+.tab-btn.active {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.search-bar .srch{
+    width: 80%;
+}
+
+.search-bar .dropdown1{
+    width: 26.8%;
+}
+.search-bar input,
+.search-bar select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 200px;
+}
+
+.search-bar .reset-btn,
+.search-bar .search-btn {
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.reset-btn {
+    background-color: #f2f2f2;
+    color: #000;
+    border: 1px solid #ddd;
+}
+
+.reset-btn:hover {
+    background-color: #e6e6e6;
+}
+
+.search-btn {
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.search-btn:hover {
+    background-color: #444;
+}
+.property-container {
+    display: flex;
+    gap: 20px;
+    max-width: 1355px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+/* Property Listing Section */
+.property-listing {
+    flex: 3;
+}
+
+.property-listing h2 {
+    margin-bottom: 20px;
+}
+
+.property-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.property-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 48%;
+}
+
+.property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.property-info {
+    padding: 15px;
+}
+
+.badge {
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.property-info h3 {
+    margin: 0;
+    color: #000;
+    font-size: 18px;
+}
+
+.property-info p {
+    margin: 5px 0 10px;
+    color: #555;
+    font-size: 14px;
+}
+
+.property-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+}
+.property-meta .num{
+    
+}
+/* Filters Section */
+.property-filters {
+    flex: 1;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+.property-filters h2 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000;
+}
+
+.property-filters ul {
+    list-style: none;
+    padding: 0;
+}
+
+.property-filters li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 14px;
+}
