@@ -24,7 +24,7 @@ html,body{
 .navbar .logo {
     width: 70px;
     height: 79px;
-    background-image: url(/images/LE\ ROSE\ LOGO.svg);
+    /* background-image: url(/images/LE\ ROSE\ LOGO.svg); */
     background-position: center;
     background-size: cover;
 }
